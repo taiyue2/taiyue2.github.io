@@ -1,0 +1,25 @@
+---
+title: "taiyue2.github.io"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    
+---
+
+## Here is my introduction:
+
+I am Tai Yue. I am a student majoring in biostatistics. This is my website.
+
+## About me
+
+Here is my [resume](resume.html) link
+
+##problem 2
+
+
+
+
+
+
+

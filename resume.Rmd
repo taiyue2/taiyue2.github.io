@@ -1,0 +1,44 @@
+---
+title: "resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    
+---
+
+##Information
+
+email:taiyue2554@columbia.cumc.com
+github account: https://github.com/taiyue2
+tel: 2179796909
+
+
+##Eucation
+
+Columbia University (Mailman School of Public Health) (New York, NY)
+Aug 2024- May 2026(Expected) 
+Major: Master of Science in Biostatistics
+
+
+University of Illinois, Urbana-Champaign (Urbana, IL)
+Aug 2020- May 2024
+Major:B.S. in Statistics, minor in Business
+
+##Work Experience
+
+Data Analyst Intern, Investment Banking Department, Essence Securities Co., Ltd., Beijing, China
+Jun 2023-Aug 2023
+
+- Participated in a group project about the IPO process for a China Electronic Engineering Design Institute
+
+-Researched multiple financial statements and other key summary report statements issued by publicly traded companies
+
+-Contributed to prospectus writing, assisted in meeting organization, and investigated trademark and patent information
+
+-Conducted bank statement review, detailed market research, and data analysis for internal materials
+
+
+
+
+
