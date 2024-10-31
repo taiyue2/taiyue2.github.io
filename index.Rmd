@@ -15,7 +15,13 @@ I am Tai Yue. I am a student majoring in biostatistics. This is my website.
 
 Here is my [resume](resume.html) link
 
-##problem 2
+
+## problem 2
+
+Here is my [flexdashboard](flexdashboard.html) link
+
+
+
 
 
 

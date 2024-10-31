@@ -1,0 +1,52 @@
+---
+title: "Flex Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r}
+library(flexdashboard)
+library(plotly)
+library(dplyr)
+
+data <- read.csv("nynoaadat.csv")
+
+
+set.seed(123)
+sample_data <- data %>% sample_n(1000)  
+
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+```{r}
+plot_ly(sample_data, x = ~date, y = ~tmax, type = 'scatter', mode = 'lines', name = 'Max Temp') %>%
+  add_trace(y = ~tmin, name = 'Min Temp') %>%
+  layout(title = "Temperature Trend Over Time",
+         xaxis = list(title = "Date"),
+         yaxis = list(title = "Temperature (°F)"))
+
+```
+Column {data-width=350}
+-----------------------------------------------------------------------
+```{r}
+# Scatter plot for precipitation vs snow depth
+plot_ly(sample_data, x = ~prcp, y = ~snwd, type = 'scatter', mode = 'markers') %>%
+  layout(title = "Precipitation vs Snow Depth",
+         xaxis = list(title = "Precipitation (inches)"),
+         yaxis = list(title = "Snow Depth (inches)"))
+
+```
+
+
+```{r}
+plot_ly(sample_data, y = ~tmax, x = ~id, type = 'box') %>%
+  layout(title = "Temperature Distribution by ID",
+         xaxis = list(title = "Station ID"),
+         yaxis = list(title = "Max Temperature (°F)"))
+
+```
+
